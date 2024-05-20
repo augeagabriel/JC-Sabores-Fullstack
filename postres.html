@@ -17,9 +17,8 @@
 
     <nav>
         <li><a href="menu.html">Menú</a></li>
-        <li><a href="#promociones">Promociones</a></li>
-        <li><a href="#realiza_tu_pedido">Realiza tu Pedido</a></li>
-        <li><a href="#quienes_somos">Quiénes Somos</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="https://wa.me/5491234567890" target="_blank">Realiza tu Pedido</a></li>
         <li><a href="contactanos.html">Contactanos</a></li>
     </nav>
 </header>
@@ -31,71 +30,74 @@
 <div class="menu">
     <nav>
         <li><a href="menu.html">Menú</a></li>
-        <li><a href="#promociones">Promociones</a></li>
-        <li><a href="#realiza_tu_pedido">Realiza tu Pedido</a></li>
-        <li><a href="#quienes_somos">Quiénes Somos</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="https://wa.me/5491234567890" target="_blank">Realiza tu Pedido</a></li>
         <li><a href="contactanos.html">Contactanos</a></li>
     </nav>
 </div>
-    <h1>Seleccion dulce</h1>
+    <h1>Postres</h1>
     <ul>
-        <li>
+        <li class="postre">
             <br>
-            <h3>Lemon Pie</h3>
+            <h2>Lemon Pie</h2>
             <img src="./img/postres/300x300/lemon-pie-300x300.png" alt="30">
             <p>El lemon pie es más bien una tarta, es decir, una base de masa y un relleno. Como su nombre indica está hecha con limón, más bien con el zumo del limón, azúcar y huevos. Todo ello mezclado hace el famoso custard, el relleno cremoso amarillo que es tan típico de la tarta de limón.</p>
         </li>
-        <li>
+        <li class="postre">
             <br>
-            <h3>Helado</h3>
+            <h2>Helado</h2>
             <br>
             <img src="./img/postres/300x300/helado-300x300.png" alt="30">
             <p>El helado o crema helada es un alimento congelado que por lo general se hace de productos lácteos tales como leche o crema. Consultar disponibilidad de gustos.</p>
         </li>
-        <li>
+        <li class="postre">
             <br>
-            <h3>Cheesecake</h3>
+            <h2>Cheesecake</h2>
             <img src="img/postres/300x300/cheesecake-300x300.png" alt="Cheesecake">
             <p>Clásico cheesecake con base de galleta, relleno cremoso y topping de frutos rojos o salsa de frutas a elección.</p>
             <p>Precio: $<?= rand(2501, 4999) ?></p>
         </li>
-        <li>
-            <h3>Torta de Manzana</h3>
+        <li class="postre">
+            <h2>Torta de Manzana</h2>
             <img src="img/postres/300x300/torta-manzana-300x300.png" alt="Torta de Manzana">
             <p>Deliciosa torta de manzana casera con una base crujiente y un relleno suave y aromático.</p>
             <p>Precio: $<?= rand(2501, 4999) ?></p>
         </li>
-        <li>
+        <li class="postre">
             <br>
-            <h3>Flan con Dulce de Leche y Crema</h3>
+            <h2>Flan con Dulce de Leche y Crema</h2>
             <img src="img/postres/300x300/flan-300x300.png" alt="Flan con Dulce de Leche y Crema">
             <p>Clásico flan casero bañado en dulce de leche y acompañado de crema chantilly.</p>
             <p>Precio: $<?= rand(2501, 4999) ?></p>
         </li>
     </ul>
 
-    <footer>
-        <a href="https://www.instagram.com/">
-            <img src="img/Redes Sociales/instagram.png" alt="Nuestro Instagram">
-        </a>
-
-        
-        <div id="contacto" class="contacto">
-
-        </div>
-
-        <div class="politicas-de-privacidad">
-            <ul>
+    <!--PIE DE PAGINA-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="sub-grupo-1">
+                    <a class="logo-footer" href="#">
+                        <img src="img/Logos/Logo JC.svg" alt="Logo de JC Sabores FullStack">
+                    </a>
+            </div>
+            <div class="sub-grupo-1">
+                <h2>MÁS INFORMACIÓN</h2>
                 <li><a href="contactanos.html">Contactanos</a></li>
                 <li><a href="Politicas-y-privacidad.html">Politicas de Privacidad</a></li>
                 <li><a href="https://autogestion.produccion.gob.ar/consumidores">Defensa al Consumidor</a></li>
-            </ul>
-
-            
+            </div>
+            <div class="sub-grupo-1">
+                <h2>SEGUINOS EN</h2>
+                <div class="red-social">
+                    <a href="#" class="logo-fb"><img src="img/Redes Sociales/facebook.svg" alt=""></a>
+                    <a href="#" class="logo-ig"><img src="img/Redes Sociales/instagram.svg" alt=""></a>
+                    <a href="#" class="logo-tw"><img src="img/Redes Sociales/twitter.svg" alt=""></a>
+                </div>
+            </div>
         </div>
-    </footer>
-    <footer>
-        <p>Derechos Reservados &copy; 2024 | JC Sabores FullStack - | Camila Palavecino | Fernando Martinez | Gabriel Ance | Joaquín Guzmán</p>
+        <div class="copyright">
+            <p>Derechos Reservados &copy; 2024 | JC Sabores FullStack | Camila Palavecino | Fernando Martinez | Gabriel Ance | Joaquín Guzmán</p>     
+        </div>
     </footer>
 </body>
 </html>

@@ -1,121 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <br></br>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=E, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enviar una solicitud de contacto - JC Sabores FullStack</title>
-    <br></br>
     <link rel="shortcut icon" href="img/icono del logo.ico" type="image/x-icon">
-    <br></br>
     <link rel="stylesheet" href="Css/Contactanos.css">
-    <br></br>
-
 </head>
 <body>
     <header class="encabezado">
         <a href="Index.html">
             <img src="img/Logos/logo-header.svg" alt="Logo de JC Sabores FullStack">
         </a>
-
-    <nav>
-        <li><a href="menu.html">Menú</a></li>
-        <li><a href="#promociones">Promociones</a></li>
-        <li><a href="#realiza_tu_pedido">Realiza tu Pedido</a></li>
-        <li><a href="#quienes_somos">Quiénes Somos</a></li>
-        <li><a href="contactanos.html">Contactanos</a></li>
-    </nav>
-</header>
-<div id="burger">
-    <div class="barra superior"></div>
-    <div class="barra media"></div>
-    <div class="barra inferior"></div>
-</div>
-<div class="menu">
-    <nav>
-        <li><a href="menu.html">Menú</a></li>
-        <li><a href="#promociones">Promociones</a></li>
-        <li><a href="#realiza_tu_pedido">Realiza tu Pedido</a></li>
-        <li><a href="#quienes_somos">Quiénes Somos</a></li>
-        <li><a href="contactanos.html">Contactanos</a></li>
-    </nav>
-</div>
-
-    <p>Por favor, completá el siguiente formulario para ponerte en contacto con nosotros.</p>
-    
-
-<form class="formulario" action="#" method="post"> </form>
-    <label for="nombre"> Nombre </label> 
-    <br>
-    <input type="text" id="nombre" name="nombre" size="30" maxlength="30" required>
-    <br>
-    <label for="correo"> Correo Electronico</label> 
-    <br>
-    <input type="email" id="correo" name="correo" size="30" maxlength="30" required>
-    <br>
-    <label for="telefono"> Telefono</label>
-    <br>
-    <input type="tel" id="telefono" name="telefono" size="30" maxlength="30" required>
-    <br>
-    <label for="motivo">Motivo:</label>
-    <br>
-        <select id="motivo" name="motivo" required>
-            <option value="default" disabled selected hidden>Selecciona un motivo</option>
-            <option value="felicitaciones">Felicitaciones</option>
-            <option value="reclamo">Reclamo</option>
-            <option value="consultas">Consultas</option>
-            <option value="error_reserva">Error en la Reserva</option>
-        </select><br><br>
-        <label for="descripcion"> Descripción </label>
-        <br>
-        <textarea name="descripcion" id="descripcion" cols="30" rows="10"> Ingrese los detalles de esta solicitud. Un integrante de nuestro personal de soporte responderá en breve. </textarea>
-        <br>
-    <button type="submit"> Enviar</button>
-    <button type="reset"> Limpiar </button>
-</form>
-
-<footer>
-    <a href="https://www.instagram.com/">
-        <img src="img/Redes Sociales/instagram.png" alt="Nuestro Instagram">
-    </a>
-
-    
-    <div id="contacto" class="contacto">
-
-    </div>
-
-    <div class="politicas-de-privacidad">
-        <ul>
+        <nav>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="https://wa.me/5491234567890" target="_blank">Realiza tu Pedido</a></li>
             <li><a href="contactanos.html">Contactanos</a></li>
-            <li><a href="Politicas-y-privacidad.html">Politicas de Privacidad</a></li>
-            <li><a href="https://autogestion.produccion.gob.ar/consumidores">Defensa al Consumidor</a></li>
-        </ul>
-
-        
+        </nav>
+    </header>
+    <div id="burger">
+        <li><a href="Index.html">Inicio</a></li>
+        <div class="barra superior"></div>
+        <div class="barra media"></div>
+        <div class="barra inferior"></div>
     </div>
-</footer>
-<footer>
-    <a href="https://www.instagram.com/">
-        <img src="img/Redes Sociales/instagram.png" alt="Nuestro Instagram">
-    </a>
-
-    
-    <div id="contacto" class="contacto">
-
-    </div>
-
-    <div class="politicas-de-privacidad">
-        <ul>
+    <div class="menu">
+        <nav>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+            <li><a href="https://wa.me/5491234567890" target="_blank">Realiza tu Pedido</a></li>
             <li><a href="contactanos.html">Contactanos</a></li>
-            <li><a href="Politicas-y-privacidad.html">Politicas de Privacidad</a></li>
-            <li><a href="https://autogestion.produccion.gob.ar/consumidores">Defensa al Consumidor</a></li>
-        </ul>
-
-        
+        </nav>
     </div>
-</footer>
-<footer>
-    <p>Derechos Reservados &copy; 2024 | JC Sabores FullStack - | Camila Palavecino | Fernando Martinez | Gabriel Ance | Joaquín Guzmán</p>
-</footer>
+    <h1>Contactanos</h1>
+    <div class="caja-de-formulario">
+        <div class="formulario-de-contacto">
+            <h3>Por favor, completá el siguiente formulario para ponerte en contacto con nosotros.</h3>
+            <form action="#">
+                <div class="información">
+                    <label for="nombre"> Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" size="30" maxlength="30" required>
+                </div>
+                <div class="información">
+                    <label for="correo"> Correo Electronico:</label> 
+                    <input type="email" id="correo" name="correo" size="30" maxlength="30" required>
+                </div>
+                <div class="información">
+                    <label for="telefono"> Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" size="30" maxlength="30" required>
+                </div>
+                <div class="información">
+                    <label for="motivo">Motivo:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="default" disabled selected hidden>Selecciona un motivo</option>
+                        <option value="felicitaciones">Felicitaciones</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="consultas">Consultas</option>
+                        <option value="error_reserva">Error en la Reserva</option>
+                    </select>
+                </div>
+                <div class="información">
+                    <label for="descripcion">Descripción:</label> 
+                    <textarea name="message" rows="3"></textarea>
+                    <p>Ingrese los detalles de esta solicitud. Un integrante de nuestro personal de soporte responderá en breve.</p>
+                </div>
+                <div class="información">
+                    <label for="image">Archivo Adjunto:</label><br>
+                    <input type="file" name="image" id="image"><br><br>
+                </div>
+                <div class="información">
+                    <input type="checkbox" name="Suscripción">
+                    <label for="Suscripción">Deseo suscribirme para recibir noticias y promociones por correo electrónico.</label><br>
+                </div>
+                <div class="información">
+                    <button type="submit"> Enviar</button>
+                    <br>
+                    <button type="reset"> Limpiar </button>
+                </div>
+            </form>
+        </div>
+        <div class="informacion-de-contacto">
+            <h4>Encontranos en</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210239.96408740184!2d-58.6849443711834!3d-34.57888075164877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1711726519460!5m2!1ses!2sar" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!--PIE DE PAGINA-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="sub-grupo-1">
+                    <a class="logo-footer" href="#">
+                        <img src="img/Logos/Logo JC.svg" alt="Logo de JC Sabores FullStack">
+                    </a>
+            </div>
+            <div class="sub-grupo-1">
+                <h2>MÁS INFORMACIÓN</h2>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="Politicas-y-privacidad.html">Politicas de Privacidad</a></li>
+                <li><a href="https://autogestion.produccion.gob.ar/consumidores">Defensa al Consumidor</a></li>
+            </div>
+            <div class="sub-grupo-1">
+                <h2>SEGUINOS EN</h2>
+                <div class="red-social">
+                    <a href="#" class="logo-fb"><img src="img/Redes Sociales/facebook.svg" alt=""></a>
+                    <a href="#" class="logo-ig"><img src="img/Redes Sociales/instagram.svg" alt=""></a>
+                    <a href="#" class="logo-tw"><img src="img/Redes Sociales/twitter.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Derechos Reservados &copy; 2024 | JC Sabores FullStack | Camila Palavecino | Fernando Martinez | Gabriel Ance | Joaquín Guzmán</p>     
+        </div>
+    </footer>
 </body>
 </html>

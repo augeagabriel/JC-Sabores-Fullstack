@@ -4,19 +4,43 @@
     box-sizing: border-box;
 }
 
-/*
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&family=Didactic+Gothic&display=swap');
 
-posible paleta de colores para poder usar 
-Nombre	Código HEX
-Negro	#000000
-Dorado	#FFD700
-Marrón	#8B4513
-Crema	#FFF8DC
-Verde Oscuro	#006400
-Gris Oscuro	#2F4F4F
-Borgoña	#800020 
+/* Estilo para los H1 con al fuente Sedan SC"*/
+h1{
+        font-family: 'Sedan SC', serif;
+        text-align: center; 
+        color: white;
+        margin-left: 125px;
+        padding-top: 5px;
+        width: 80vw;
+        height: 50px;
+        background-color: #0d2033;
+        align-items: center;
+        border-radius: 10px;
+    }
 
-*/
+
+/* Estilo para los H2 con la fuente "Sedan SC" */
+h2 {
+    font-family: 'Sedan SC', serif;
+    text-align: center; 
+    color: white;
+}
+
+/* Estilo para los párrafos <p> con la fuente "Didactic Gothic" */
+p {
+    font-family: 'Didactic Gothic', sans-serif;
+    text-align: center; 
+}
+
+body {
+    background-image: url(../img/Banner/Banner\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 150px;
+}
+
 
 /*HEADER*/
 
@@ -80,7 +104,6 @@ nav a:hover {
 
 /*MENU LATERAL*/
 
-/*manu lateral*/
 
 .menu {
     width: 360px;
@@ -156,143 +179,108 @@ nav a:hover {
     transform: translateY(-8px) rotateZ(-45deg);
 }
 
-/*BANNER*/
+/* POSTRES*/ 
 
-.banner {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    opacity: 80%;
+.postre {
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Añade padding alrededor del contenido */
+    margin: 20px auto; 
+    margin-top: 100px;
+    /* Centra horizontalmente y añade margen entre las bebidas */
+    width: 80%;
+    background-color: #501f0a;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px grey;
 }
 
-.tituloBanner{
-    color: white;
-    font-size: 4.5rem;
-    text-align: center;
-    top: -600px;
-    position: relative;
-    text-shadow:  7px 8px 4px rgba(0, 0, 0, 0.5);
+.postre img {
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;/* Centra horizontalmente la imagen */
+ ; /* Añade padding encima y debajo de la imagen */
+    box-shadow: 2px 2px 10px rgb(42, 39, 39);
 }
 
-.btnBanner{
-    display: block;
-    margin: auto;
-    position: relative;
-    top: -32rem;
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: #FFD700;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+.postre p {
+    color: #efefef;
 }
 
-.btnBanner:hover {
-    border: solid 1px black;
-    cursor: pointer;
-}
+/*FOOTER*/
 
-.volver {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px;
-    border-radius: 50%; 
-    transition: background-color 0.3s;
-}
-
-.volver:hover {
-    background-color: #302a1f;
-}
-
-
-.promociones {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.aside-suscripcion {
- /* Ajusta el ancho del aside */
-    margin-left: 10px;
-    margin-right: 200px; /* Cambia el orden para que aparezca al final */
-    text-align: center; /* Centra el contenido */
-}
-
-.carrousel-imagenes {
+.pie-pagina {
     width: 100%;
-    height: 600px;
-    overflow: hidden;
-    position: relative;
+    background-color:  rgb(194, 182, 156);
+    padding-top: 50px; /* Para evitar cualquier solapamiento */
 }
 
-.carrousel-imagenes ul{
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.logo-footer {
+    width: 100%;
+    height: 100%;
     display: flex;
-    position: absolute;
-    width: 300%;
-    left: 0;
-    animation: deslizar 20s infinite linear;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(1px 1px 1px #000);
 }
 
-.carrousel-imagenes li {
-    width: 33.33%;
+.pie-pagina .grupo-1sub-grupo-1 img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .sub-grupo-1 h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .sub-grupo-1 li {
+    color: #efefef;
+    margin-bottom: 10px;
     list-style: none;
 }
 
-.carrousel-imagenes img {
-    width: 100%;
-    height: auto;
+.pie-pagina .grupo-1 .sub-grupo-1 a {
+    text-decoration: none;
+    color: white;
 }
 
-@keyframes deslizar{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+.pie-pagina .grupo-1 .sub-grupo-1 a:hover {
+    color: #FFD700;
 }
 
-#quienes-somos h2{
-    
-}
-.nosotros-somos {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 15px;
-    padding: 2px;
-}
-.img-quienes-somos {
-    width: 700px;
+.pie-pagina .grupo-1 .sub-grupo-1 a:visited { 
+    color: white;
 }
 
-.formulario {
-padding: 50px;  
+.red-social {
+    display:block; 
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #282121;
+    margin-top: 13px;
+    margin-right: 1px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
 }
 
-footer {
-    background-color: black;
-}
 
-/*Responsive*/
-
-
-
-@media (max-width: 620px) {
-    #burger {
-        display: block;
-    }
-    
-    header {
-        justify-content: flex-end;
-    }
-
-    header nav {
-        display: none;
-    }
+.pie-pagina .copyright {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
 }

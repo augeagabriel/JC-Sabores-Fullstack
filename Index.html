@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/Index.css">
-    <script src="Js/jquery-3.4.1.min.js"></script>
-    <script src="Js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
 </head>
 <body>
 
@@ -21,17 +22,19 @@
 
     <nav>
         <li><a href="menu.html">Menú</a></li>
-        <li><a href="#promociones">Promociones</a></li>
-        <li><a href="#realiza_tu_pedido">Realiza tu Pedido</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="https://wa.me/5491234567890" target="_blank">Realiza tu Pedido</a></li>
         <li><a href="#quienes_somos">Quiénes Somos</a></li>
         <li><a href="contactanos.html">Contactanos</a></li>
     </nav>
 </header>
+
 <div id="burger">
     <div class="barra superior"></div>
     <div class="barra media"></div>
     <div class="barra inferior"></div>
 </div>
+
 <div class="menu">
     <nav>
         <li><a href="menu.html">Menú</a></li>
@@ -46,6 +49,53 @@
 <h2 class="tituloBanner">Descubrí Nuestras Especialidades</h2>
 <button class="btnBanner" id="verMenuBtn">Ver Menú</button>
 
+<section class="postBanner">
+
+    <h2>Variedad y Calidad</h2>
+
+    <article class="opciones">
+
+    <div class="cajas">
+        <h3>Menu Vegetariano</h3>
+        <p>Los mejores platos vegetariano y mas variados que podras encontrar.
+        </p>
+        <span class="icono">
+            <i class="fas fa-leaf"></i> 
+    </div>
+
+    <div class="cajas">
+        <h3>Menu Celiacos</h3>
+        <p>Pensamos en todo!, si buscas alimentos sin TACC no lo pienses más!
+            Somos tu mejor opción.
+        </p>
+        <span class="icono">
+            <i class="fas fa-allergies"></i>
+        </span>
+    </div>
+
+    <div class="cajas">
+        <h3>Burger Show</h3>
+        <p>Descubri la variedad y los sabores unicos que tenemos para vos. Personaliza tu Burger 
+            con los ingredientes que gustes.
+        </p>
+        <span class="icono">
+            <i class="fas fa-hamburger"></i> <!-- Reemplaza "fa-icono" con el nombre del icono que desees usar -->
+        </span>
+    </div>
+
+    <div class="cajas">
+        <h3>Cocteleria</h3>
+        <p>Disfruta de los mejores tragos y más exclusivos cocteles que tenemos
+            para ofrecerte.
+        </p>
+        <span class="icono">
+            <i class="fas fa-cocktail"></i> <!-- Reemplaza "fa-icono" con el nombre del icono que desees usar -->
+        </span>
+    </div>
+    </article>
+
+</section>
+
 <section>
 <div class="promociones">
     <div class="aside-container">
@@ -53,18 +103,22 @@
         <h2>Suscribite para recibir nuestras mejores promociones</h2>
         <p>¡No te pierdas y aprovecha nuestras ofertas especiales y descuentos exclusivos! <br>
             Suscribite a nuestra lista de correo y recibi nuestras promociones directamente en tu bandeja de entrada.</p>
-        <form action="procesar suscripción.php" method="post">
+        <form action="#" method="post">
             <label for="email">Correo Electronico:</label>
             <br>
             <input type="email" name="email" id="email">
             <br>
             <button type="submit">Obtener Beneficios</button>
         </form>
-        <div class="direccion"> 
-            <h2>¿Donde encontrarnos?</h2> 
-            <!--Acá usemos algún iframe de Google Maps-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210239.96408740184!2d-58.6849443711834!3d-34.57888075164877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1711726519460!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <section id="realiza_tu_pedido">
+
+            <div class="col-reserva">        
+                <h2>¡Realiza tu reserva!</h2>
+                <p>¡Realiza tu pedido!</p>
+                <a href="https://wa.me/5491234567890" target="_blank">
+                    <img id="ico-log-reserva" src="img/Redes Sociales/ico_whatsapp_reservas.gif" alt="Logo de WhatsApp">
+                </a></div>
+
     </aside>
 </div>
     <div class="carrousel">                
@@ -84,22 +138,6 @@
 </section>
         <main>
 
-            <section id="realiza_tu_pedido">
-                <div class="col-pedido">
-                    <h2>¡Realiza tu pedido!</h2>
-                    <p>¡Realiza tu pedido!</p>
-                    <a href="https://wa.me/5491234567890" target="_blank">
-                        <img id="ico-log-pedido"  src="img/Redes Sociales/ico_whatsapp_pedidos.gif" alt="Logo de WhatsApp">
-                    </a>
-                </div>
-                <div class="col-reserva">        
-                    <h2>¡Realiza tu reserva!</h2>
-                    <p>¡Realiza tu pedido!</p>
-                    <a href="https://wa.me/5491234567890" target="_blank">
-                        <img id="ico-log-reserva" src="img/Redes Sociales/ico_whatsapp_reservas.gif" alt="Logo de WhatsApp">
-                    </a></div>
-            </section>
-
             <section id="quienes_somos">
                 <h2>Quiénes Somos</h2>
                 <div class="nosotros-somos">
@@ -117,28 +155,35 @@
 
     <a href="#" class="volver"></a>
 
-    <footer>
-        <a href="https://www.instagram.com/">
-            <img src="img/Redes Sociales/instagram.png" alt="Nuestro Instagram">
-        </a>
-
-        
-        <div id="contacto" class="contacto">
-
-        </div>
-
-        <div class="politicas-de-privacidad">
-            <ul>
+    <!--PIE DE PAGINA-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="sub-grupo-1">
+                    <a class="logo-footer" href="#">
+                        <img src="img/Logos/Logo JC.svg" alt="Logo de JC Sabores FullStack">
+                    </a>
+            </div>
+            <div class="sub-grupo-1">
+                <h2>MÁS INFORMACIÓN</h2>
                 <li><a href="contactanos.html">Contactanos</a></li>
                 <li><a href="Politicas-y-privacidad.html">Politicas de Privacidad</a></li>
                 <li><a href="https://autogestion.produccion.gob.ar/consumidores">Defensa al Consumidor</a></li>
-            </ul>
-
-            
+            </div>
+            <div class="sub-grupo-1">
+                <h2>SEGUINOS EN</h2>
+                <div class="red-social">
+                    <a href="#" class="logo-fb"><img src="img/Redes Sociales/facebook.svg" alt=""></a>
+                    <a href="#" class="logo-ig"><img src="img/Redes Sociales/instagram.svg" alt=""></a>
+                    <a href="#" class="logo-tw"><img src="img/Redes Sociales/twitter.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Derechos Reservados &copy; 2024 | JC Sabores FullStack | Camila Palavecino | Fernando Martinez | Gabriel Ance | Joaquín Guzmán</p>     
         </div>
     </footer>
-    <footer>
-        <p>Derechos Reservados &copy; 2024 | JC Sabores FullStack - | Camila Palavecino | Fernando Martinez | Gabriel Ance | Joaquín Guzmán</p>
-    </footer>
+
+    <script src="Js/jquery-3.4.1.min.js"></script>
+    <script src="Js/main.js"></script>
 </body>
 </html>

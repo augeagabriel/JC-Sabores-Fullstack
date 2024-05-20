@@ -1,9 +1,11 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+
+/* Estilo para los H1 con al fuente Sedan SC"*/
 h1{
     font-family: 'Sedan SC', serif;
     text-align: center; 
@@ -23,8 +25,17 @@ h2 {
 font-family: 'Sedan SC', serif;
 text-align: center; 
 color: white;
+margin-bottom: 15px;
 }
 
+/* Estilo para los párrafos <p> con la fuente "Didactic Gothic" */
+p {
+font-family: 'Didactic Gothic', sans-serif;
+text-align: center; 
+color: #efefef;
+font-size: 15px;
+margin-top: 15px;
+}
 
 body {
 background-image: url(../img/Banner/Banner\ 1.jpg);
@@ -32,6 +43,32 @@ background-size: cover;
 background-position: center;
 margin-top: 150px;
 }
+
+
+
+.video-promo {
+    width: 80vw;
+    height: 680px;
+    padding: 20px; /* Añade padding alrededor del contenido */
+    margin: 20px auto; 
+    margin-top: 100px;
+    background-color: #0a1a2a;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-bottom: 100PX;
+    list-style: none;
+    text-align: center;
+}
+video {
+    max-width: 1280px;
+    max-width: 720px;
+    position: a;
+
+}
+
+
+
 
 
 /*HEADER*/
@@ -174,12 +211,6 @@ nav a:hover {
 
 
 
-.tarjetas-menus {
-margin-top: 150px;
-margin-bottom: 100px;
-background-color: #282121;
-border-radius: 10px;
-}
 
 /*FOOTER*/
 

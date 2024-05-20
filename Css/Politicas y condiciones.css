@@ -4,20 +4,6 @@
     box-sizing: border-box;
 }
 
-/*
-
-posible paleta de colores para poder usar 
-Nombre	Código HEX
-Negro	#000000
-Dorado	#FFD700
-Marrón	#8B4513
-Crema	#FFF8DC
-Verde Oscuro	#006400
-Gris Oscuro	#2F4F4F
-Borgoña	#800020 
-
-*/
-
 /*HEADER*/
 
 .logo-header {
@@ -38,21 +24,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 1em;
-    transition: 5 0ms all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
-/*
-header.transparente {
-    background-color: transparent;
-    box-shadow: none;
-}*/
-
-
 
 header nav {
     color: #b3b3b3;
     font-weight: normal;
     margin-left: 1em;
-    transition: all 300ms ease-in-out
+    transition: all 300ms ease-in-out;
 }
 
 /*HEADER NAV*/
@@ -70,7 +49,7 @@ nav a {
     font-weight: 400;
     color: black;
     padding: 5px 5px; 
-    transition: background-color 0.3s ease; /* transición lenta para el cambio de color de fondo, podemos cambiar la velocidad cualqueir cosa */
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -79,8 +58,6 @@ nav a:hover {
 }
 
 /*MENU LATERAL*/
-
-/*manu lateral*/
 
 .menu {
     width: 360px;
@@ -122,9 +99,10 @@ nav a:hover {
     left: 0;
     padding: 0.5rem;
     text-align: center;
-    width: 100;
+    width: 100%;
 }
-/*BURGUER DE MENU*/ 
+
+/*BURGER DE MENU*/
 
 #burger {
     position: fixed;
@@ -146,153 +124,32 @@ nav a:hover {
 #burger.abierto .barra {
     background-color: white;
 }
+
 #burger.abierto .barra.superior {
     transform: translateY(8px) rotateZ(45deg);
 }
+
 #burger.abierto .barra.media {
     width: 0;
 }
+
 #burger.abierto .barra.inferior {
     transform: translateY(-8px) rotateZ(-45deg);
 }
 
-/*BANNER*/
+/*BODY*/
 
-.banner {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    opacity: 80%;
-}
-
-.tituloBanner{
-    color: white;
-    font-size: 4.5rem;
+h1 {
+    margin-top: 100px;
     text-align: center;
-    top: -600px;
-    position: relative;
-    text-shadow:  7px 8px 4px rgba(0, 0, 0, 0.5);
+    font-size: 70px;
 }
 
-.btnBanner{
-    display: block;
-    margin: auto;
-    position: relative;
-    top: -32rem;
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: #FFD700;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.btnBanner:hover {
-    border: solid 1px black;
-    cursor: pointer;
-}
-
-.volver {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    padding: 10px;
-    border-radius: 50%; 
-    transition: background-color 0.3s;
-}
-
-.volver:hover {
-    background-color: #302a1f;
-}
-
-
-.promociones {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.aside-suscripcion {
- /* Ajusta el ancho del aside */
-    margin-left: 10px;
-    margin-right: 200px; /* Cambia el orden para que aparezca al final */
-    text-align: center; /* Centra el contenido */
-}
-
-.carrousel-imagenes {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    position: relative;
-}
-
-.carrousel-imagenes ul{
-    display: flex;
-    position: absolute;
-    width: 300%;
-    left: 0;
-    animation: deslizar 20s infinite linear;
-}
-
-.carrousel-imagenes li {
-    width: 33.33%;
-    list-style: none;
-}
-
-.carrousel-imagenes img {
-    width: 100%;
-    height: auto;
-}
-
-@keyframes deslizar{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
-
-#quienes-somos h2{
-    
-}
-.nosotros-somos {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 15px;
-    padding: 2px;
-}
-.img-quienes-somos {
-    width: 700px;
-}
-
-.formulario {
-padding: 50px;  
-}
-
-footer {
-    background-color: black;
-}
-
-/*Responsive*/
-
-
-
-@media (max-width: 620px) {
-    #burger {
-        display: block;
-    }
-    
-    header {
-        justify-content: flex-end;
-    }
-
-    header nav {
-        display: none;
-    }
+body {
+    text-align: center;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 1.5em;
+    margin-left: auto;
+    margin-right: auto;
 }

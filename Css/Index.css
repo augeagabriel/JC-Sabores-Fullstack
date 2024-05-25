@@ -5,6 +5,36 @@
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&family=Didactic+Gothic&display=swap');
+
+/* Estilo para los H1 con al fuente Sedan SC"*/
+h1{
+        font-family: 'Sedan SC', serif;
+        text-align: center; 
+        color: white;
+        margin-left: 125px;
+        padding-top: 5px;
+        width: 80vw;
+        height: 50px;
+        background-color: #0d2033;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+
+/* Estilo para los H2 con la fuente "Sedan SC" */
+h2 {
+    font-family: 'Sedan SC', serif;
+    text-align: center; 
+}
+
+/* Estilo para los párrafos <p> con la fuente "Didactic Gothic" */
+p {
+    font-family: 'Didactic Gothic', sans-serif;
+    text-align: center; 
+}
+
+
 
 /*HEADER*/
 
@@ -198,20 +228,133 @@ nav a:hover {
 .promociones {
     display: flex;
     flex-direction: row-reverse;
+    text-align: center; /* Centra el texto */
+    font-family: 'Sedan SC', serif;
+    padding: 20px; /* Añade padding alrededor del contenido */
+    margin: 20px auto; 
+    margin-top: 100px;
+    /* Centra horizontalmente y añade margen entre las bebidas */
+    width: 95%;
+    background-color: #501f0a4e;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+
+.promociones h2 {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    font-size: 30px;
+    background-color: #0a1a2a;
+    border-radius: 10px;
+    color: white;
+}
+
+.promociones p {
+    color: #ffffff;
+}
+
+.aside-container {
+    width: 60%;
+    height: 800px;
+    margin-left: 4%;
+    background-color: #88724a;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px grey;
 }
 
 .aside-suscripcion {
+    width: 100px;
+    height: ;
  /* Ajusta el ancho del aside */
     margin-left: 10px;
     margin-right: 200px; /* Cambia el orden para que aparezca al final */
     text-align: center; /* Centra el contenido */
+
+
 }
 
+.formulario-suscripcion {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #501f0a4e;
+    color: white;
+    font-family: 'Sedan SC', serif;
+}
+
+.formulario-suscripcion p {
+    color: white;
+    font-family: 'Sedan SC', serif;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2%;
+    background-color: #FFD700;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.caja-de-reserva {
+    width: 90%;
+    height: 150px;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #501f0a4e;
+    color: white;
+    font-family: 'Sedan SC', serif;
+}
+
+.caja-de-reserva a img{
+    padding: 2px;
+    width: 25%;
+}
+
+.caja-de-horarios {
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 6%;
+    border-radius: 10px;
+    background-color: #501f0a4e;
+    color: white;
+    font-family: 'Sedan SC', serif;
+}
+
+.carrousel {
+    width: 90%;
+    height: 800px;
+    background-color: #88724a;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.carrousel p {
+    color: white;
+    margin-top: 5%;
+}
+
+
 .carrousel-imagenes {
-    width: 100%;
+    width: 65%;
     height: 600px;
+    margin-top: 5%;
+    margin-left: 18%;
     overflow: hidden;
     position: relative;
+    background-color: #0c447c6c;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px grey;
 }
 
 .carrousel-imagenes ul{
@@ -219,7 +362,7 @@ nav a:hover {
     position: absolute;
     width: 300%;
     left: 0;
-    animation: deslizar 20s infinite linear;
+    animation: deslizar 15s infinite steps(1, end);
 }
 
 .carrousel-imagenes li {
@@ -233,35 +376,33 @@ nav a:hover {
 }
 
 @keyframes deslizar{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+    0% { margin-left: 0; }
+    33.33% { margin-left: -100%; }
+    66.66% { margin-left: -200%; }
+    100% { margin-left: -300%; }
 }
 
 .nosotros-somos {
     display: flex;
     flex-direction: row-reverse;
     margin: 15px;
-    padding: 2px;
+    padding: 20px; /* Añade padding alrededor del contenido */
+    margin: 20px auto; 
+    margin-top: 100px;
+    /* Centra horizontalmente y añade margen entre las bebidas */
+    width: 95%;
+    background-color: #501f0a4e;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px grey;
 }
 .img-quienes-somos {
-    width: 700px;
+    width: 70%;
+    height: auto;
+
 }
 
 .formulario {
 padding: 50px;  
-}
-
-footer {
-    background-color: black;
 }
 
 .postBanner h2 {
@@ -401,16 +542,194 @@ footer {
 
 
 
-@media (max-width: 620px) {
-    #burger {
-        display: block;
+
+/* Phones (max-width: 440px) */
+@media (max-width: 440px) {
+    body {
+        padding: 0 1em;
     }
-    
+
     header {
-        justify-content: flex-end;
+        padding: 0 1em;
     }
 
     header nav {
         display: none;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    .menu {
+        width: 100%;
+        left: -100%;
+    }
+
+    .menu.abierto {
+        left: 0;
+    }
+
+    .tituloBanner {
+        font-size: 2.5rem;
+        top: -300px;
+    }
+
+    .btnBanner {
+        top: -16rem;
+        width: 100px;
+        height: 35px;
+    }
+
+    .promociones {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-top: 50px;
+        padding: 10px;
+        height: 1024px;
+    }
+
+    .nosotros-somos {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .img-quienes-somos {
+        width: 100%;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .cajas {
+        width: 100%;
+    }
+
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .pie-pagina .grupo-1sub-grupo-1 img {
+        width: 100px;
+    }
+}
+
+/* Tablets (max-width: 720px) */
+@media (max-width: 720px) {
+    body {
+        padding: 0 2em;
+    }
+
+    header {
+        padding: 0 1.5em;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    .menu {
+        width: 300px;
+    }
+
+    .caja-de-formulario {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.5em;
+    }
+
+    .informacion-de-contacto h4,
+    .informacion-de-contacto ul,
+    .informacion-de-contacto p {
+        text-align: left;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        padding: 30px 0;
+    }
+
+    .pie-pagina .grupo-1sub-grupo-1 figure img {
+        width: 200px;
+    }
+
+    .pie-pagina .grupo-1 .sub-grupo-1 h2 {
+        font-size: 18px;
+    }
+
+    .pie-pagina .grupo-1 .sub-grupo-1 p {
+        font-size: 16px;
+    }
+
+    .pie-pagina .copyright {
+        font-size: 14px;
+    }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+
+    header {
+        padding: 0 1.5em;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    .menu {
+        width: 360px;
+    }
+
+    .caja-de-formulario {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 2em;
+    }
+
+    .informacion-de-contacto h4,
+    .informacion-de-contacto ul,
+    .informacion-de-contacto p {
+        text-align: left;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0;
+    }
+
+    .pie-pagina .grupo-1sub-grupo-1 figure img {
+        width: 250px;
+    }
+
+    .pie-pagina .grupo-1 .sub-grupo-1 h2 {
+        font-size: 20px;
+    }
+
+    .pie-pagina .grupo-1 .sub-grupo-1 p {
+        font-size: 18px;
+    }
+
+    .pie-pagina .copyright {
+        font-size: 15px;
     }
 }

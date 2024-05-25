@@ -382,9 +382,7 @@ button {
     100% { margin-left: -300%; }
 }
 
-.nosotros-somos {
-    display: flex;
-    flex-direction: row-reverse;
+.caja-quienes-somos {
     margin: 15px;
     padding: 20px; /* Añade padding alrededor del contenido */
     margin: 20px auto; 
@@ -394,11 +392,47 @@ button {
     background-color: #501f0a4e;
     border-radius: 15px;
     box-shadow: 2px 2px 10px grey;
+    color: ;
 }
-.img-quienes-somos {
-    width: 70%;
-    height: auto;
 
+.caja-quienes-somos h2 {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    font-size: 30px;
+    background-color: #0a1a2a;
+    border-radius: 10px;
+    color: white;
+}
+.nosotros-somos {
+    display: flex;
+    flex-direction:;
+    margin: 15px;
+    padding: 20px; /* Añade padding alrededor del contenido */
+    margin: 20px auto; 
+    margin-top: 20px;
+    /* Centra horizontalmente y añade margen entre las bebidas */
+    width: 95%;
+    background-color: #501f0a4e;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.nosotros-somos p {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+
+}
+
+.img-quienes-somos {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nosotros-somos p {
+    color: white;
 }
 
 .formulario {

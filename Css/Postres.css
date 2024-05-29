@@ -35,7 +35,7 @@ p {
 }
 
 body {
-    background-image: url(../img/Banner/Banner\ 1.jpg);
+    background-image: url(../img/Banner/Banner-1.jpg);
     background-size: cover;
     background-position: center;
     margin-top: 150px;
@@ -47,6 +47,7 @@ body {
 .logo-header {
     width: 50%;
     height: 50px;
+    margin-top: -70px;
 }
 
 header {
@@ -88,90 +89,72 @@ nav a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     color: black;
-    padding: 5px 5px; 
+    padding: 5px 5px;
+    text-decoration: none;
     transition: background-color 0.3s ease; /* transición lenta para el cambio de color de fondo, podemos cambiar la velocidad cualqueir cosa */
 }
 
 nav a:hover {
     background-color: #FFD700;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-/*MENU LATERAL*/
+/*BARRA HAMBURGUES*/
 
-
-.menu {
-    width: 360px;
-    height: 100vh;
-    background-color: #424242e7;
-    position: fixed;
-    top: 0;
-    left: -360px;
-    padding-top: 40px;
-    transition: all 800ms ease-in-out;
-    z-index: 2;
+.encabezado {
+    height: 80px;
+    background-color: rgb(236, 231, 220);
 }
-
-.menu.abierto {
-    left: 0;
-}
-
-.menu nav {
-    padding: 1rem;
+.navbar {
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2em;
 }
 
-.menu nav a {
-    padding: 0.6rem;
-    color: rgba(255, 255, 255, 0.75);
-    transition: 300ms all ease-in-out;
+a{
+    text-decoration: none;
 }
 
-.menu nav a:hover {
-    color: white;
+ol,ul {
+    list-style: none;
 }
 
-.menu .copyright {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.9rem;   
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0.5rem;
-    text-align: center;
-    width: 100;
-}
-/*BURGUER DE MENU*/ 
-
-#burger {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
+.label-hamburguesa {
     cursor: pointer;
-    z-index: 10;
+}
+
+.input-hamburguesa /*input*/ {
     display: none;
 }
 
-#burger .barra {
-    width: 30px;
-    height: 2px;
-    margin: 6px;
-    background-color: #a97c50;
-    transition: 400ms all ease-in-out;
+.input-hamburguesa:checked + .ul-hamburguesa {
+    height: calc(100vh - 80px);
 }
 
-#burger.abierto .barra {
-    background-color: white;
+.ul-hamburguesa {
+    width: 100%;
+    background-color: rgb(236, 231, 220);
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
 }
-#burger.abierto .barra.superior {
-    transform: translateY(8px) rotateZ(45deg);
-}
-#burger.abierto .barra.media {
-    width: 0;
-}
-#burger.abierto .barra.inferior {
-    transform: translateY(-8px) rotateZ(-45deg);
+
+.link-hamburguesa {
+    font-size: 2rem;
+    color: #302a1f;
+    font-weight: bold;
+    list-style: none;
 }
 
 /* POSTRES*/ 
@@ -201,12 +184,11 @@ nav a:hover {
     color: #efefef;
 }
 
-/*FOOTER*/
 
+/*FOOTER*/
 .pie-pagina {
     width: 100%;
-    background-color:  rgb(194, 182, 156);
-    padding-top: 50px; /* Para evitar cualquier solapamiento */
+    background-color: rgb(194, 182, 156);
 }
 
 .pie-pagina .grupo-1 {
@@ -215,67 +197,193 @@ nav a:hover {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
+    padding: 45px 0;
 }
 
-.logo-footer {
+
+.pie-pagina .grupo-1 .logo-footer {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    filter: drop-shadow(1px 1px 1px #000);
 }
 
-.pie-pagina .grupo-1sub-grupo-1 img {
+.pie-pagina .grupo-1 .logo-footer img{
     width: 250px;
 }
 
-.pie-pagina .grupo-1 .sub-grupo-1 h2 {
-    color: #fff;
+.pie-pagina .sub-grupo-1 h2{
+    color: white;
     margin-bottom: 25px;
     font-size: 20px;
+    text-align: center;
 }
 
-.pie-pagina .grupo-1 .sub-grupo-1 li {
+.pie-pagina .sub-grupo-1 li{
     color: #efefef;
     margin-bottom: 10px;
     list-style: none;
-}
-
-.pie-pagina .grupo-1 .sub-grupo-1 a {
     text-decoration: none;
-    color: white;
 }
 
-.pie-pagina .grupo-1 .sub-grupo-1 a:hover {
-    color: #FFD700;
-}
-
-.pie-pagina .grupo-1 .sub-grupo-1 a:visited { 
-    color: white;
-}
-
-.red-social {
-    display:block; 
+.pie-pagina .grupo-1 .sub-grupo-1 a:visited {
+    color: #0d2033;
     text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #282121;
-    margin-top: 13px;
-    margin-right: 1px;
-    background-color: #0d2033;
-    text-align: center;
-    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social svg{
+    display: flex;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    justify-content: center;
 }
 
-
+.grupo-1 .sub-grupo-1 {
+    justify-content: center;
+}
 .pie-pagina .copyright {
     background-color: #0a1a2a;
+    color: white;
     padding: 15px 10px;
     text-align: center;
-    color: #fff;
-    font-size: 15px;
+}
+
+/* REPONSIVE */
+
+@media(min-width: 700px) {
+    h1 {
+        font-family: 'Sedan SC', serif;
+        margin-left: 80px;
+    }
+    body {
+        padding: 2 4em;
+    }
+}
+
+@media(max-width: 440px) {
+    h1 {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .link-hamburguesa {
+    font-size: 20px;
+}
+}
+
+@media (min-width: 770px){
+    /*panel hamburguesa*/
+    .label-hamburguesa {
+        display: none;
+    }
+
+    .ul-hamburguesa {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+    }
+
+    .link-hamburguesa{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }    
+
+    .a-hamburguesa :hover {
+        background-color: #FFD700;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .pie-pagina {
+        width: 100%;
+        background-color: rgb(194, 182, 156);
+        padding-top: 50px; /* Para evitar cualquier solapamiento */
+        padding-bottom: 20px; /* Espacio en la parte inferior */
+        color: white;
+        font-family: 'Sedan SC', serif;
+    }
+    
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 440px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+        justify-content: space-around; /* Espaciado uniforme entre los elementos */
+        gap: 20px; /* Espacio entre los elementos */
+        padding: 20px 0;
+    }
+    
+    .logo-footer img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: -5px;
+        margin-top: -25px;
+        align-items: center;
+        filter: drop-shadow(1px 1px 1px #000);
+    }
+    
+    
+    .pie-pagina .grupo-1 .sub-grupo-1 h2 {
+        color: #fff;
+        justify-content: space-between;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .pie-pagina .grupo-1 .sub-grupo-1 li {
+        color: #efefef;
+        margin-bottom: 5px; /* Espacio inferior */
+        margin-left: -40px;
+        list-style: none;
+    }
+    
+    .pie-pagina .grupo-1 .sub-grupo-1 a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .pie-pagina .grupo-1 .sub-grupo-1 a:hover {
+        color: #FFD700;
+        text-decoration: none;
+    }
+    
+    .red-social {
+        display: flex;
+        justify-content: center; /* Centrado de los iconos de redes sociales */
+        gap: 10px; /* Espaciado entre los iconos */
+    }
+    
+    .red-social img {
+        width: 40px; /* Tamaño de los iconos */
+        height: 40px;
+    }
+    
+    .copyright {
+        text-align: center; /* Centrado del texto */
+        margin-top: 20px; /* Espacio superior */
+        font-size: 14px;
+    }
+.postre img{
+    width: 100%;
+}
 }

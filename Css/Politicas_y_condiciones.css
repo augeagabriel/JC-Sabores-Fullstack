@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.logo-header {
+    width: 50%;
+    height: 50px;
+    margin-top: -60px;
+    margin-left: -150px;
+}
+
+header {
+    background-color: rgb(236, 231, 220);
+    box-shadow: 1.5px 1.5px 4px #b3b3b3;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    transition: 5 0ms all ease-in-out;
+}
+
+
+
+header nav {
+    color: #b3b3b3;
+    font-weight: normal;
+    margin-left: 1em;
+    transition: all 300ms ease-in-out
+}
+
+/*HEADER NAV*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* transición lenta para el cambio de color de fondo, podemos cambiar la velocidad cualqueir cosa */
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    border-radius: 10px;
+}
+
+/*BARRA HAMBURGUES*/
+
+.encabezado {
+    height: 80px;
+    background-color: rgb(236, 231, 220);
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+.label-hamburguesa {
+    cursor: pointer;
+}
+
+.input-hamburguesa /*input*/ {
+    display: none;
+}
+
+.input-hamburguesa:checked + .ul-hamburguesa {
+    height: calc(100vh - 80px);
+}
+
+.ul-hamburguesa {
+    width: 100%;
+    background-color: rgb(236, 231, 220);
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
+}
+
+.link-hamburguesa {
+    font-size: 2rem;
+    color: #302a1f;
+    font-weight: bold;
+    list-style: none;
+}
+
+/*BODY*/
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 70px;
+}
+
+body {
+    text-align: center;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (min-width: 770px){
+    /*panel hamburguesa*/
+    .label-hamburguesa {
+        display: none;
+    }
+
+    .ul-hamburguesa {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+    }
+
+    .link-hamburguesa{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }    
+
+    .a-hamburguesa :hover {
+        background-color: #FFD700;
+
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    body {
+            padding: 0 2em;
+        }
+
+    
+    h1{
+        font-size: 20px;
+        margin: 40px;
+        margin-top: 150px;
+    }
+
+}

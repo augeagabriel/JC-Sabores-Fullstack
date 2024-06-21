@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="Css/carrito_compras.css">
+</head>
+<body>
+    <div id="app">
+        <div v-if="orderNumber">
+            <h1>Compra realizada con éxito</h1>
+            <p>Tu número de pedido es: {{ orderNumber }}</p>
+            <button @click="resetOrder">Volver al inicio</button>
+        </div>
+        <div v-else>
+            <h1>Productos</h1>
+            <div class="product" v-for="product in products" :key="product.id">
+                <img :src="product.image" :alt="product.name">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.description }}</p>
+                <p>{{ product.price | currency }}</p>
+                <button @click="addToCart(product)">Añadir al carrito</button>
+            </div>
+
+            <h1>Carrito de Compras</h1>
+            <div v-for="item in cart" :key="item.product.id" class="cart-item">
+                <img :src="item.product.image" :alt="item.product.name">
+                <h2>{{ item.product.name }}</h2>
+                <input type="number" v-model.number="item.quantity" min="1">
+                <textarea v-model="item.comment" placeholder="Añadir comentario"></textarea>
+                <p>{{ item.product.price | currency }}</p>
+                <button @click="removeFromCart(item.product.id)">Eliminar</button>
+            </div>
+            <p>Total: {{ totalPrice | currency }}</p>
+
+            <h1>Detalles de Entrega</h1>
+            <label>
+                <input type="radio" value="local" v-model="deliveryMethod"> Retirar en el local
+            </label>
+            <label>
+                <input type="radio" value="delivery" v-model="deliveryMethod"> Envío a domicilio
+            </label>
+            <div v-if="deliveryMethod === 'delivery'">
+                <input type="text" v-model="deliveryAddress" placeholder="Dirección" required>
+                <input type="text" v-model="deliveryBell" placeholder="Timbre" required>
+                <textarea v-model="deliveryExtras" placeholder="Datos extras" required></textarea>
+            </div>
+
+            <h1>Método de Pago</h1>
+            <label>
+                <input type="radio" value="cash" v-model="paymentMethod"> Efectivo
+            </label>
+            <label>
+                <input type="radio" value="card" v-model="paymentMethod"> Tarjeta
+            </label>
+            <div v-if="paymentMethod === 'card'">
+                <input type="text" v-model="cardNumber" placeholder="Número de tarjeta" maxlength="16" required>
+                <input type="text" v-model="cardHolderName" placeholder="Nombre del titular" maxlength="20" required>
+                <input type="text" v-model="cardExpiryDate" placeholder="Fecha de vencimiento (MM/AA)" required>
+                <input type="text" v-model="cardCVC" placeholder="CVC" maxlength="3" required>
+            </div>
+            
+            <button @click="checkout">Realizar Compra</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="Js/carrito_compras.js"></script>
+</body>
+</html>

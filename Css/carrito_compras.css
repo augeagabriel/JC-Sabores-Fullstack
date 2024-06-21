@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/Banner/Banner-1.jpg);
+    margin: 0;
+    padding: 20px;
+}
+
+#app {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products, .cart {
+    margin-bottom: 20px;
+}
+
+.product, .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img, .cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="number"], input[type="text"], textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+input[type="month"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin: 5px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
